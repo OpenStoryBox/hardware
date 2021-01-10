@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name arduino_mkr)(type Legacy)(uri /home/anthony/git/personnel/OpenStoryBox/hardware/osb/parts/ABX00012.lib)(options "")(descr ""))
+)

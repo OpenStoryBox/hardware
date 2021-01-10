@@ -1,0 +1,124 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L arduino_mkr:ABX00012 U?
+U 1 1 5F844A37
+P 5750 3350
+F 0 "U?" H 5750 4317 50  0000 C CNN
+F 1 "ABX00012" H 5750 4226 50  0000 C CNN
+F 2 "ARDUINO_ABX00012" H 5750 3350 50  0001 L BNN
+F 3 "5" H 5750 3350 50  0001 L BNN
+F 4 "Arduino" H 5750 3350 50  0001 L BNN "Champ4"
+F 5 "" H 5750 3350 50  0001 L BNN "Champ5"
+F 6 "Manufacturer Recommendations" H 5750 3350 50  0001 L BNN "Champ6"
+	1    5750 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ALT D?
+U 1 1 5F8483F6
+P 1800 1950
+F 0 "D?" V 1839 1832 50  0000 R CNN
+F 1 "LED_ALT" V 1748 1832 50  0000 R CNN
+F 2 "" H 1800 1950 50  0001 C CNN
+F 3 "~" H 1800 1950 50  0001 C CNN
+	1    1800 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F849985
+P 1800 1450
+F 0 "R?" H 1868 1496 50  0000 L CNN
+F 1 "470" H 1868 1405 50  0000 L CNN
+F 2 "" V 1840 1440 50  0001 C CNN
+F 3 "~" H 1800 1450 50  0001 C CNN
+	1    1800 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F84A6ED
+P 1800 2900
+F 0 "#PWR?" H 1800 2650 50  0001 C CNN
+F 1 "GND" H 1805 2727 50  0000 C CNN
+F 2 "" H 1800 2900 50  0001 C CNN
+F 3 "" H 1800 2900 50  0001 C CNN
+	1    1800 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BS170 Q?
+U 1 1 5F852425
+P 1700 2500
+F 0 "Q?" H 1904 2454 50  0000 L CNN
+F 1 "BS170" H 1904 2545 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 1900 2425 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BS/BS170.pdf" H 1700 2500 50  0001 L CNN
+	1    1700 2500
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F869081
+P 1800 1000
+F 0 "#PWR?" H 1800 850 50  0001 C CNN
+F 1 "+3V3" H 1815 1173 50  0000 C CNN
+F 2 "" H 1800 1000 50  0001 C CNN
+F 3 "" H 1800 1000 50  0001 C CNN
+	1    1800 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F86A4B9
+P 7400 2850
+F 0 "#PWR?" H 7400 2700 50  0001 C CNN
+F 1 "+3V3" H 7415 3023 50  0000 C CNN
+F 2 "" H 7400 2850 50  0001 C CNN
+F 3 "" H 7400 2850 50  0001 C CNN
+	1    7400 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2950 7400 2950
+Wire Wire Line
+	7400 2950 7400 2850
+Wire Wire Line
+	1800 1000 1800 1300
+Wire Wire Line
+	1800 1600 1800 1800
+Wire Wire Line
+	1800 2100 1800 2300
+Wire Wire Line
+	1800 2900 1800 2700
+Text GLabel 4300 3550 0    50   Input ~ 0
+LED_DEBUG
+Wire Notes Line
+	2350 600  2350 3400
+Wire Notes Line
+	2350 3400 600  3400
+Wire Notes Line
+	600  3400 600  600 
+Wire Notes Line
+	600  600  2350 600 
+Text Notes 700  3350 0    50   ~ 0
+DEBUG
+Wire Wire Line
+	4300 3550 4550 3550
+Text GLabel 1400 2500 0    50   Input ~ 0
+LED_DEBUG_PA22
+$EndSCHEMATC
